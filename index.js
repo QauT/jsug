@@ -1,5 +1,4 @@
-////coded by : rr#1000
-///https://www.youtube.com/channel/UCAVB8JOSy_y3qoR7bIsiAYg?view_as=subscriber
+
 const suggestionChannelID = '1086734875337429090';
 const suggestionChannelID2 = '1087311052968038400';
 const Discord = require('discord.js');
@@ -16,7 +15,7 @@ app.get('/', (req, res) => {
 app.listen(3000, () => {
   console.log('server started');
 });
-///https://www.youtube.com/channel/UCAVB8JOSy_y3qoR7bIsiAYg?view_as=subscriber
+
 
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -25,8 +24,6 @@ client.on("ready", () => {
   console.log(`> | Name : ${client.user.username}`); //حط قيم الي تبيها
 });
 
-////coded by : rr#1000
-///https://www.youtube.com/channel/UCAVB8JOSy_y3qoR7bIsiAYg?view_as=subscriber
 
 const sug = JSON.parse(fs.readFileSync("./rasug.json", "utf8"));
 var sugcool = new Set();
@@ -77,8 +74,6 @@ client.on('message', async message => {
         message.delete()
       })
     }
-  ////coded by : rr#1000
-  ///https://www.youtube.com/channel/UCAVB8JOSy_y3qoR7bIsiAYg?view_as=subscriber
 
   if (message.content.startsWith('رد')) {
     if (message.channel.id === suggestionChannelID2 && !message.author.bot)
@@ -114,8 +109,6 @@ client.on('message', async message => {
 
   }
 })
-////coded by : rr#1000
-///https://www.youtube.com/channel/UCAVB8JOSy_y3qoR7bIsiAYg?view_as=subscriber
 
 client.on('message', message => {
   if (message.content.startsWith(prefix + 'set-sug')) {
@@ -132,8 +125,6 @@ client.on('message', message => {
     message.channel.send(`**جميع الاقتراحات سيتم ارسالها للروم الاتي : ${ch}**`)
   }
 })
-////coded by : rr#1000
-///https://www.youtube.com/channel/UCAVB8JOSy_y3qoR7bIsiAYg?view_as=subscriber
 
 
 client.on("message", message => {
@@ -147,15 +138,10 @@ client.on("message", message => {
       \`${prefix}set-sug :\` **لاختيار روم الاقتراحات **
       \`${prefix}reply :\` **للرد على اقتراح معين**
       \`${prefix}ping :\` **لعرض بنق البوت **
-
-      رابط الشرح : https://www.youtube.com/channel/UCAVB8JOSy_y3qoR7bIsiAYg
-      رابط السيرفر : https://discord.gg/XMC8vTb
             `);
     message.channel.send(help);
   }
 });
-////coded by : rr#1000
-///https://www.youtube.com/channel/UCAVB8JOSy_y3qoR7bIsiAYg?view_as=subscriber
 
 
 client.on("message", message => {
@@ -167,8 +153,4 @@ client.on("message", message => {
 })
 
 
-////coded by : rr#1000
-///https://www.youtube.com/channel/UCAVB8JOSy_y3qoR7bIsiAYg?view_as=subscriber
-
-
-client.login(process.env.token);
+client.login(`MTA3MjU3Mzk4NzIwNjQ3NTgzNg.G3n_LN.ReKr9-kZseI9HV9d7t-N-5zFfiABsacltD32jM`);
